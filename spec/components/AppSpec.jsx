@@ -34,7 +34,6 @@ describe('App', function() {
     expect(React.Component.isPrototypeOf(App)).to.be.true;
 
     var videoEntryTitleElements = scryRenderedDOMComponentsWithClass(app, 'video-list-entry-title');
-
     videoEntryTitleElements.forEach((videoEntryTitle) => {
       Simulate.click(videoEntryTitle);
       var player = findRenderedDOMComponentWithClass(app, 'video-player');
@@ -46,7 +45,7 @@ describe('App', function() {
     });
   });
 
-  xdescribe('when rendering live data from YouTube', function() {
+  describe('when rendering live data from YouTube', function() {
     var searchYouTubeStub;
 
     beforeEach(function() {
