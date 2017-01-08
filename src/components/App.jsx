@@ -8,7 +8,6 @@ class App extends React.Component {
     };
   }
   componentDidMount(){
-    console.log(`to mount videos`);
     this.getYouTubeVideos('kitten videos');
   }
   onListVideoClick(video) {
